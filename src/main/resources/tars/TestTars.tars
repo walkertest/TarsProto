@@ -1,0 +1,19 @@
+module TestTars {
+    struct TestList
+    {
+        0 optional string testStr;
+        1 optional vector<string> strList;
+    };
+
+    struct TestMap
+    {
+        0 optional string testStr;
+        1 optional map<string,string> strMap;
+    };
+
+    struct TestStruct
+    {
+        0 optional string testStr;
+        1 optional TestMap testMap;
+    }
+}
