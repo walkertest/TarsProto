@@ -3,29 +3,44 @@ module tars
     //请求包体
     struct RequestPacket
     {
-        1  require short        iVersion;
-        2  require byte         cPacketType  = 0;
-        3  require int          iMessageType = 0;
-        4  require int          iRequestId;
-        5  require string       sServantName = "";
-        6  require string       sFuncName    = "";
-        7  require vector<byte> sBuffer;
-        8  require int          iTimeout     = 0;
-        9  require map<string, string> context;
-        10 require map<string, string> status;
+        1  require short        iVersion;		//版本号
+        2  require byte         cPacketType;	//包类型
+        3  require int          iMessageType;//消息类型
+        4  require int          iRequestId;	//请求ID
+        5  require string       sServantName;	//servant名字
+        6  require string       sFuncName;	//函数名称
+        7  require vector<byte> sBuffer;		//二进制buffer
+        8  require int          iTimeout;		//超时时间（毫秒）
+        9  require map<string, string> context;	//业务上下文
+        10 require map<string, string> status; 	//框架协议上下文
     };
 
-    //响应包体
     struct ResponsePacket
     {
-        1 require short         iVersion;
-        2 require byte          cPacketType  = 0;
-        3 require int           iRequestId;
-        4 require int           iMessageType = 0;
-        5 require int           iRet         = 0;
-        6 require vector<byte>  sBuffer;
-        7 require map<string, string> status;
-        8 optional string        sResultDesc;
-        9 optional map<string, string> context;
+        1 require short         iVersion;		//版本号
+        2 require byte          cPacketType;	//包类型
+        3 require int           iRequestId;		//请求ID
+        4 require int           iMessageType;	//消息类型
+        5 require int           iRet;			//返回值
+        6 require vector<byte>  sBuffer;		//二进制流
+        7 require map<string, string> status; 	//协议上下文
+        8 optional string        sResultDesc;   //描述
+        9 optional map<string, string> context;   //业务上下文
     };
+
+    struct ResponseTupPacket
+    {
+        1 require short         iVersion;		//版本号
+        2 require byte          cPacketType;	//包类型
+        3 require int           iMessageType;	//消息类型
+        4 require int           iRequestId;		//请求ID
+        5  require string       sServantName;	//servant名字
+        6  require string       sFuncName;	//函数名称
+        7 require vector<byte>  sBuffer;		//二进制流
+        8  require int          iTimeout;		//超时时间（毫秒）
+        9  require map<string, string> context;	//业务上下文
+        10 require map<string, string> status; 	//框架协议上下文
+    };
+
+
 };
