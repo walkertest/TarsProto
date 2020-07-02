@@ -10,7 +10,7 @@ import com.qq.tars.support.query.prx.EndpointF;
 import org.junit.Test;
 
 /**
- * tars协议本身的序列化与反序列化
+ * tars协议本身的序列化与反序列化1
  */
 public class TarsEncAndDec {
 
