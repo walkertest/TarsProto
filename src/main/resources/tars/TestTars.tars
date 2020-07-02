@@ -15,5 +15,15 @@ module TestTars {
     {
         0 optional string testStr;
         1 optional TestMap testMap;
-    }
+    };
+
+     struct Student{
+                         0 optional string name;
+                         1 optional int age;
+          };
+
+      struct LiveRoomView {
+          0 optional long age;
+          1 optional vector<Student> students;
+      };
 }

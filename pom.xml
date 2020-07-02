@@ -13,7 +13,7 @@
         <slf4j.version>1.7.7</slf4j.version>
         <logback.version>1.1.2</logback.version>
         <lombok.version>1.14.8</lombok.version>
-        <tars.version>1.7.2</tars.version>
+        <tars.version>1.7.1</tars.version>
         <fastjson.version>1.2.58</fastjson.version>
     </properties>
 
@@ -62,6 +62,14 @@
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.2.7.RELEASE</version>
+        </dependency>
+
 
 
     </dependencies>
