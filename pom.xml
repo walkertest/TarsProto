@@ -11,7 +11,7 @@
     <properties>
         <apache.common.lang.version>3.9</apache.common.lang.version>
         <slf4j.version>1.7.7</slf4j.version>
-        <logback.version>1.1.2</logback.version>
+        <logback.version>1.2.0</logback.version>
         <lombok.version>1.14.8</lombok.version>
         <tars.version>1.7.1</tars.version>
         <fastjson.version>1.2.58</fastjson.version>
