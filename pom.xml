@@ -14,7 +14,7 @@
         <logback.version>1.1.2</logback.version>
         <lombok.version>1.14.8</lombok.version>
         <tars.version>1.7.1</tars.version>
-        <fastjson.version>1.2.58</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
     </properties>
 
     <dependencies>
